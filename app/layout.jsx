@@ -1,4 +1,3 @@
-// Supports weights 100-900
 import '/public/globals.css'
 import NavBar from './components/navbar'
 import Socials from "./components/socials"

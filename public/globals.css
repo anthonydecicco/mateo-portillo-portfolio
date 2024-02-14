@@ -65,25 +65,23 @@ input:focus {
   background-color: #1a1a1a;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
-  /* switch to 2 columns at 800px */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  /* switch to 1 column at 500px */
-  @media screen and (max-width: 500px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
+}

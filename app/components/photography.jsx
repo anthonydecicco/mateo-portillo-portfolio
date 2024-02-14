@@ -10,7 +10,6 @@ import { handlePriority } from "../utilities/helper-functions";
 
 export default function Photography() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    //Setting the initial state of windowWidth to the width of a user's window.
 
     useEffect(() => {
         const handleWindowResize = () => {
@@ -23,7 +22,6 @@ export default function Photography() {
             window.removeEventListener('resize', handleWindowResize);
         }
     }, []);
-    //Track the re-sizing of the window
 
     return (
             <div id="photography-container" className="flex flex-wrap p-4 mb-10">

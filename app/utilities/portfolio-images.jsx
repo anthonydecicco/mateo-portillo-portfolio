@@ -1,5 +1,3 @@
-//future state: add blurred data URLs
-
 export const portfolioImages = [
     {
         id: 1,
