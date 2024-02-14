@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/fonts/jost-latin-400-normal.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 5.5rem;
+}
+
+#homepage section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media screen and (max-width: 768px) {
+  #homepage section div a img {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+main {
+  min-height: calc(calc(100vh - 176px))
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hero-height {
+  height: calc(calc(100vh - 88px))
+}
+
+.hero-height-footer {
+  height: calc(calc(100vh - 176px))
+}
+
+input, textarea {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #1a1a1a;
+  border: #d8d8d8;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: .5rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #d8d8d8;
+  -webkit-box-shadow: 0 0 0px 40rem #1a1a1a inset;
+}
+
+input:focus {
+  background-color: #1a1a1a;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+
+  /* switch to 2 columns at 800px */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* switch to 1 column at 500px */
+  @media screen and (max-width: 500px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
