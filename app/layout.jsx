@@ -2,6 +2,8 @@ import '/public/globals.css'
 import NavBar from './components/navbar'
 import Socials from "./components/socials"
 
+export const runtime = 'edge'
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
