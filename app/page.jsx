@@ -46,7 +46,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="flex hero-height-footer relative w-full">
+      <section className="flex hero-height-footer relative w-full mb-2 md:mb-0">
         <p className="flex h-full w-full text-center items-center text-2xl md:text-6xl px-12 2xl:px-[20rem]">&quot;Photography, as we all know, is not real at all. It is an illusion of reality with which we create our own private world.&quot; - Arnold Newman</p>
       </section>
     </div>
