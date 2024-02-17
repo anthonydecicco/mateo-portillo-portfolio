@@ -32,23 +32,23 @@ export default function ContactForm() {
   return (
     <div className="w-full flex justify-center mb-10 ">
       <div className="mt-10 flex flex-col align-middle max-w-[40rem]">
-        <p className={`${didSubmit === true ? `hidden` : `text-2xl md:text-4xl mt-12 text-center`}`}>
+        <p className={`${didSubmit === true ? `hidden` : `text-2xl md:text-4xl mt-12 text-center`} px-4`}>
           Want to get in touch? Fill out the form below to contact me directly!
         </p>
         <form
           className={`${didSubmit === true ? `hidden` : `px-4 md:px-0 text-2xl mt-24 md:w-[40rem] ml-auto mr-auto h-fit`}`}
           onSubmit={handleSubmit}
         >
-          <div className="flex flex-wrap justify-between w-full h-fit">
-            <div className="mr-2">
+          <div className="flex flex-wrap justify-between w-full h-fit ">
+            <div className="w-full md:w-[18rem]">
               <label htmlFor="fname">First Name</label>
               <br></br>
-              <input type="text" id="fname" className="w-[18rem] mb-10" required></input>
+              <input type="text" id="fname" className="w-full mb-10" required></input>
             </div>
-            <div>
+            <div className="w-full md:w-[18rem]">
               <label htmlFor="lname">Last Name</label>
               <br></br>
-              <input type="text" id="lname" className="w-[18rem] mb-10" required></input>
+              <input type="text" id="lname" className="w-full mb-10" required></input>
             </div>
           </div>
 
