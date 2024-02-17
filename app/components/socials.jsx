@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Socials() {
 
     return (
-        <section className="w-full h-4 md:h-6 flex items-center justify-center mb-4">
+        <section className="w-full h-4 md:h-6 flex items-center justify-center mb-6">
             <div className="mx-2 invert h-full" id="instagram">
                 <a href="https://www.instagram.com/mp_teo/" target="_blank">
                     <Image
