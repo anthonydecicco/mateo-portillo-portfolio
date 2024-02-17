@@ -20,7 +20,7 @@ html {
 }
 
 @media screen and (max-width: 768px) {
-  #homepage section div a img {
+  #homepage section div a {
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
