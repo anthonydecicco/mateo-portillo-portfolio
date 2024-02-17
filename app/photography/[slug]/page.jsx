@@ -32,15 +32,15 @@ export default function Page({params}) {
     const image = images.find(image => String(image.id) === params.slug);
 
     return (
-        <div className="w-full h-full flex flex-col">
-            <div className="hero-height-footer w-[full] flex flex-col justify-center justify-items-center shrink-0">
+        <div className="w-full h-full flex flex-col top-0">
+            <div className="hero-height-footer w-[full] flex flex-col justify-items-center shrink-0">
                 <Image
                     src={image.src}
                     alt={image.alt}
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-[90%] h-[90%] ml-auto mr-auto align-middle mt-2 object-contain"
+                    className="w-[90%] h-[85%] ml-auto mr-auto object-contain"
                     priority
                     quality={(75)}
                 />
